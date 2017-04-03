@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F0A1B10C-518D-48D5-B12B-063A8CE4931B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POS</RootNamespace>
+    <AssemblyName>POS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="ListViewEx, Version=1.0.4671.2253, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Projects\nainamShopSolution 2\nainamShopSolution\bin\Debug\ListViewEx.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>Libs\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PrintableListView">
+      <HintPath>..\..\..\..\Downloads\TestSolution\PrintableListView\bin\Debug\PrintableListView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\address.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\address.Designer.cs">
+      <DependentUpon>address.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\attendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\attendance.Designer.cs">
+      <DependentUpon>attendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\banking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\banking.Designer.cs">
+      <DependentUpon>banking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\banklehist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\banklehist.Designer.cs">
+      <DependentUpon>banklehist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\calc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\calc.Designer.cs">
+      <DependentUpon>calc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\challan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\challan.Designer.cs">
+      <DependentUpon>challan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\challanhist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\challanhist.Designer.cs">
+      <DependentUpon>challanhist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\employee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\employee.Designer.cs">
+      <DependentUpon>employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\expenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\expenses.Designer.cs">
+      <DependentUpon>expenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\gatepass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\gatepass.Designer.cs">
+      <DependentUpon>gatepass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\gatepasshist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\gatepasshist.Designer.cs">
+      <DependentUpon>gatepasshist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ledger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ledger.Designer.cs">
+      <DependentUpon>ledger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\main_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\main_form.Designer.cs">
+      <DependentUpon>main_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\memo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\memo.Designer.cs">
+      <DependentUpon>memo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\partyledger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\partyledger.Designer.cs">
+      <DependentUpon>partyledger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\partyledgerhist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\partyledgerhist.Designer.cs">
+      <DependentUpon>partyledgerhist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\pay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\pay.Designer.cs">
+      <DependentUpon>pay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\payment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\payment.Designer.cs">
+      <DependentUpon>payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\profitbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\profitbar.Designer.cs">
+      <DependentUpon>profitbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\purchase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\purchase.Designer.cs">
+      <DependentUpon>purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\salhist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\salhist.Designer.cs">
+      <DependentUpon>salhist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\salpur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\salpur.Designer.cs">
+      <DependentUpon>salpur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\stock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\stock.Designer.cs">
+      <DependentUpon>stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\testlistview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\testlistview.Designer.cs">
+      <DependentUpon>testlistview.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\address.resx">
+      <DependentUpon>address.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\attendance.resx">
+      <DependentUpon>attendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\banking.resx">
+      <DependentUpon>banking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\banklehist.resx">
+      <DependentUpon>banklehist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\calc.resx">
+      <DependentUpon>calc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\challan.resx">
+      <DependentUpon>challan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\challanhist.resx">
+      <DependentUpon>challanhist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\employee.resx">
+      <DependentUpon>employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\expenses.resx">
+      <DependentUpon>expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\gatepass.resx">
+      <DependentUpon>gatepass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\gatepasshist.resx">
+      <DependentUpon>gatepasshist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ledger.resx">
+      <DependentUpon>ledger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\main_form.resx">
+      <DependentUpon>main_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\memo.resx">
+      <DependentUpon>memo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\partyledger.resx">
+      <DependentUpon>partyledger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\partyledgerhist.resx">
+      <DependentUpon>partyledgerhist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\pay.resx">
+      <DependentUpon>pay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\payment.resx">
+      <DependentUpon>payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\profitbar.resx">
+      <DependentUpon>profitbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\purchase.resx">
+      <DependentUpon>purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\salhist.resx">
+      <DependentUpon>salhist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\salpur.resx">
+      <DependentUpon>salpur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\stock.resx">
+      <DependentUpon>stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\testlistview.resx">
+      <DependentUpon>testlistview.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %2821%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %2817%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %2814%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %2820%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %2815%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %2816%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %2818%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nm2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Advert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lgo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lgo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Advert1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lgo2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
