@@ -34,15 +34,14 @@
   <PropertyGroup />
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="ListViewEx, Version=1.0.4671.2253, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Projects\nainamShopSolution 2\nainamShopSolution\bin\Debug\ListViewEx.dll</HintPath>
+    <Reference Include="ListViewEx">
+      <HintPath>Libs\ListViewEx.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data">
       <HintPath>Libs\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="PrintableListView">
-      <HintPath>..\..\..\..\Downloads\TestSolution\PrintableListView\bin\Debug\PrintableListView.dll</HintPath>
+      <HintPath>Libs\PrintableListView.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -311,6 +310,9 @@
     <EmbeddedResource Include="UserControls\testlistview.resx">
       <DependentUpon>testlistview.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Manual For nSales.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
